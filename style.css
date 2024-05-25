@@ -16,14 +16,15 @@ html {
 }
 
 .hero-section header {
-    min-width: 750px;
+    /*min-width: 750px;*/
     margin: auto;
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
     text-transform: capitalize;
+    flex-wrap: wrap;
 }
 
 .hero-section header nav ul {
@@ -87,9 +88,13 @@ html {
     justify-content: space-between;
     margin-bottom: 3rem;
     font-size: 1.2rem;
+    flex-wrap: wrap;
 }
 
-.hero-section-info .box > * ,
+.hero-section-info .box > * {
+    flex-basis: 50%;
+}
+
 .hero-section-info .box ul li,
 .tech-blog-section > *,
 .speaking-event-section > * {
@@ -121,6 +126,7 @@ html {
 .speaking-event-section{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .speaking-event {
@@ -190,4 +196,37 @@ footer > .icon-list > .icon-list-item a img {
 
 footer .heart-symbol {
     color: red;
+}
+
+@media  only screen and (max-width: 767px) {
+    .hero-section header {
+        flex-direction: column;
+    }
+
+    .logo {
+        order: -1;
+    }
+
+    .hero-section header nav {
+        margin: 2rem 0;
+    }
+
+    .hero-section-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-section-info .box > * {
+        flex-basis: 100%;
+    }
+
+    .hero-section-info .box h2,
+    .tech-blog-section > h2,
+    .speaking-event-section > h2{
+        margin-bottom: 1rem;
+    }
+
+    .tech-blog-section > *,
+    .speaking-event-section > * {
+        flex-basis: 100%;
+    }
 }
