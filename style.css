@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Forum", serif;
+}
+
+.hero-section {
+    background-color: lightcoral;
+    color: white;
+}
+
+.hero-section header {
+    min-width: 750px;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    text-transform: capitalize;
+}
+
+.hero-section header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section header nav ul li {
+    margin-right: 1rem;
+}
+
+.hero-section header nav ul li:last-of-type {
+    margin-right: 0;
+}
+
+.hero-section header nav ul li a,
+.logo{
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.contact-btn {
+    text-decoration: none;
+}
+
+.contact-btn > button {
+    background-color: white;
+    color: lightcoral;
+    padding: 0.8rem 1rem;
+    border: none;
+    text-transform: capitalize;
+}
+
+.contact-btn > button:hover {
+    cursor: pointer;
+}
+
+.container {
+    min-width: 350px;
+    margin: auto;
+    width: 80%;
+    padding: 3rem 0;
+}
+
+.hero-section-title {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+}
+
+.hero-section-title span {
+    font-style: italic;
+}
+
+.hero-section-info .box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+.hero-section-info .box > * ,
+.hero-section-info .box ul li,
+.tech-blog-section > *,
+.speaking-event-section > * {
+    width: 50%;
+}
+
+.hero-section-info .box h2,
+.tech-blog-section > h2,
+.tech-blog-section-info-list-item > h3,
+.speaking-event-section-info-list-item > h3,
+.speaking-event-section > h2{
+    text-transform: capitalize;
+}
+
+.hero-section-info .box ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.hero-section-info .box ul li {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.tech-blog-section,
+.speaking-event-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.speaking-event {
+    background-color: bisque;
+}
+
+.tech-blog-section-info-list,
+.speaking-event-section-info-list {
+    list-style: none;
+}
+
+.tech-blog-section-info-list-item,
+.speaking-event-section-info-list-item{
+    margin-bottom: 2rem;
+}
+
+.tech-blog-section-info-list-item > h3,
+.speaking-event-section-info-list-item > h3 {
+    margin-bottom: 1rem;
+}
+
+.tech-blog-section-info-list-item > time,
+.speaking-event-section-info-list-item > time{
+    display: block;
+    color: #808080;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    color: white;
+}
+
+footer > .icon-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+footer > .icon-list > .icon-list-item {
+    margin-right: 1rem;
+}
+
+footer > .icon-list > .icon-list-item:last-of-type {
+    margin-right: 0;
+}
+
+footer > .icon-list > .icon-list-item a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
+footer > .icon-list > .icon-list-item a img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+footer .heart-symbol {
+    color: red;
+}
